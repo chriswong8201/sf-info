@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          SF6
+          SF6昌
         </a>
       </header>
     </div>
