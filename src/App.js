@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Scoreboard from './modules/Scoreboard/index.js';
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,8 @@ function App() {
           SFVI info page2
         </a>
       </header>
+      <Scoreboard/>
+      
     </div>
   );
 }
