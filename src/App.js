@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          SFVI info page
+          SFVI info page2
         </a>
       </header>
     </div>
