@@ -1,5 +1,5 @@
 {
-  "homepage": "http://chriswong8201.github.io/sf-info/App.js",
+  "homepage": ".",
   "name": "sf-info-app",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,9 @@
   "scripts": {
     "start": "react-scripts start",
     "deploy": "gh-pages -d build",
+    "client-s3-deploy": "aws s3 sync build/ s3://sf-info",
+    "client-cloudfront-invalidation": "aws cloudfront create-invalidation --distribution-id E59Y7C6QVVQVZ --paths '/*",
+    "client-deploy": "npm run build && npm run client-s3-deploy",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
