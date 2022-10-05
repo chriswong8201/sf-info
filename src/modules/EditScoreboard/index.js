@@ -1,15 +1,16 @@
 import React from "react";
 import {useContext} from "react";
-import {ScoreboardViewModel} from "./vm.js";
-import Scoreboard from "./views/scoreboard";
+import {EditScoreboardViewModel} from "./vm.js";
+import EditScoreboard from "./views/editScoreboard";
 
 const Index = () => {
     const {  
-        sbContext, valueContext} = ScoreboardViewModel();
+        sbContext, valueContext} = EditScoreboardViewModel();
+
         return (
             <>
             <sbContext.Provider value={valueContext}>
-                <Scoreboard context={sbContext}/>
+                <EditScoreboard context={sbContext}/>
         </sbContext.Provider>
         </>
 

@@ -1,0 +1,92 @@
+.left-border {
+  border-left: 1px solid #333;
+}
+
+.flag-container {
+    display: flex;
+  justify-content: start;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: fit-content;
+}
+
+.flag {
+  height:30px;
+  padding-left: 12px;
+}
+
+.custom-card {
+  width: 100%;
+  max-width: 500px !important;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.card-opacity{
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-enter-done {
+  opacity: 1;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.p2-container{
+  display: flex;
+  justify-content: end;
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px !important;
+}
+
+.player-name{
+  color: white
+}
+
+.player-container {
+  background-color: #333;
+}
+
+@keyframes rollout {
+  0% { transform: translateY(-100px); }
+  100% { transform: none; }
+}
+
+.roll-out {
+  animation: rollout 0.4s;
+}
